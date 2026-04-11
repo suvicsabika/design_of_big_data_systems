@@ -1,15 +1,14 @@
-# {short title, representative of solved problem and found solution}
+# EventHive - Intelligens rendezvényszervező és jegyértekésítési platform
 
 ## Context and Problem Statement
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+TODO: {Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
 
 ## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+* Microservices Architecture style
+* Space-Based Architecture style
+* Event-Drive Architecture style
 
 ## Decision Outcome
 
