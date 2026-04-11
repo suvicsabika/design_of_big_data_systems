@@ -113,8 +113,12 @@ workspace "EvenHive" "Digital Event Organizer and Ticket Selling Platform" {
             autolayout lr
         }
 
-        component ss.tm "TicketManagerComponents" {
+        component ss.tm "Component" {
             include *
+            exclude ss.tm.nt
+            exclude ss.sm
+            exclude ss.st
+        
             autolayout lr
         }
 
