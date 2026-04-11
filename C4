@@ -1,0 +1,90 @@
+workspace "EvenHive" "Digital Event Organizer and Ticket Selling Platform" {
+
+    !identifiers hierarchical
+
+    model {
+        u = person "User"
+        o = person "Organizer"
+        ss = softwareSystem "EventHive" {
+            em = container "Event Manager" {
+                tags "Create event" "Publish Event"
+            }
+            tm = container "Ticket Manager" {
+                tags "Sell online tickets" "Dynamic pricing"
+            }
+            ln = container "Login" {
+                tags "QR/NFC validation"
+            }
+            st = container "Seating" {
+                tags "Manage capacity" "Manage seating"
+            }
+            mt = container "Monitoring" {
+                tags "Real-time visits"
+            }
+            mk = container "Marketing" {
+                tags "Campaings" "Recommendations"
+            }
+            an = container "Analytics" {
+                tags "Dashboard for Organizers" "Core analytics"
+            }
+            pm = container "Payment" {
+                tags "Payments services"
+            }
+            sm = container "SMS" {
+                tags "SMS service"
+            }
+        }
+
+        o -> ss.em "Uses"
+        o -> ss.tm "Uses"
+        ss.tm -> u "Sells"
+        ss.tm -> ss.st "Communicate"
+        u -> ss.ln "Uses"
+        o -> ss.ln "Uses"
+        o -> ss.st "Organizes"
+        o -> ss.mt "Organizes"
+        o -> ss.mk "Organizes"
+        ss.mk -> u "Recommends"
+        ss.an -> o "Analyze"
+        ss.tm -> ss.pm "Sells"
+        ss.sm -> u "Sends"
+        ss.sm -> o "Sends"
+        
+    }
+
+    views {
+        systemContext ss "Context" {
+            include *
+        }
+
+        container ss "Container" {
+            include *
+        }
+
+        styles {
+            element "Element" {
+                color #DC143C
+                stroke #DC143C
+                strokeWidth 7
+                shape roundedbox
+            }
+            element "Person" {
+                shape person
+            }
+            element "Database" {
+                shape cylinder
+            }
+            element "Boundary" {
+                strokeWidth 5
+            }
+            relationship "Relationship" {
+                thickness 4
+            }
+        }
+    }
+
+    configuration {
+        scope softwaresystem
+    }
+
+}
