@@ -1,4 +1,4 @@
-# EventHive - Intelligens rendezvényszervező és jegyértekésítési platform
+# EventHive - Inteligent event management and ticket sales platform
 
 ## Context and Problem Statement
 
