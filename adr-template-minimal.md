@@ -2,7 +2,7 @@
 
 ## Context and Problem Statement
 
-TODO: {Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+EventHive is an intelligent event management and ticket sales platform designed to support the creation, publication, operation, and monitoring of events such as concerts, conferences, and workshops. The platform must provide a reliable and scalable way for organizers to create and publish events while supporting a rapidly growing user base, multiple concurrent large users, and integration with external services.
 
 ## Considered Options
 
@@ -12,7 +12,6 @@ TODO: {Describe the context and problem statement, e.g., in free form using two 
 
 ## Decision Outcome
 
-Chosen option: "{title of option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
-Microservices Architecture style would be too expensive. 
-Space-Based Architecture style would not performe as good as it needs.
-
+ * The Microservices architecture style would be too expensive.
+ * The Space-Based architecture style would not perform as well as needed.
+ * The Event-Based architecture style would suffice, offering the performance and scalability we require.
