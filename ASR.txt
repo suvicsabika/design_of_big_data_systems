@@ -1,0 +1,25 @@
+## Functional Requirements (FR)
+
+| ID  | Requirement        | Architectural Significance |
+|-----|--------------------|----------------------------|
+| FR1 | Event Creation      | Requires content management, publishing workflows, and role-based access control for organizers. |
+| FR2 | Ticket Sales        | Core business capability; drives transactional processing, payment integration, and digital ticket generation. |
+| FR3 | Admission Control   | Requires real-time or near-real-time ticket validation, mobile scanning support, and secure validation mechanisms. |
+| FR4 | Dynamic Pricing     | Requires pricing rules engine, real-time data processing, and flexible business logic services. |
+| FR5 | Seat Management     | Has strong impact on data consistency, concurrency control, and inventory reservation mechanisms. |
+| FR6 | Notifications       | Requires integration with external communication providers and support for asynchronous event-driven workflows. |
+| FR7 | Analytics           | Requires collection and processing of operational and business data, often through separate analytical pipelines. |
+| FR8 | Marketing Campaigns | Implies customer segmentation, recommendation capabilities, and integration with campaign delivery components. |
+
+## Non-Functional Requirements (NFR)
+
+| ID   | Quality Attribute   | Architectural Significance |
+|------|----------------------|----------------------------|
+| NFR1 | Performance          | Requires low-latency services, optimized APIs, caching, and efficient purchase workflows. |
+| NFR2 | Scalability          | Requires horizontally scalable components, load balancing, distributed services, and elastic infrastructure. |
+| NFR3 | Availability         | Requires fault tolerance, redundancy, multi-region or globally distributed deployment, and resilient recovery mechanisms. |
+| NFR4 | Security             | Requires encryption, secure payment handling, strong authentication, authorization, and secure secret management. |
+| NFR5 | Maintainability      | Encourages modular design, clear service boundaries, CI/CD support, and observability. |
+| NFR6 | Integration          | Requires stable APIs, adapters, and loose coupling with third-party providers. |
+| NFR7 | Consistency          | Critically affects storage and transaction design to prevent overselling and ensure inventory correctness. |
+| NFR8 | Audit & Compliance   | Requires logging, traceability, retention policies, and privacy-aware data handling. |
